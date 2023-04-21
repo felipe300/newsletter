@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--clr-bg: #e1dbfe;
+	--clr-bg-primary: #212121;
+	--clr-btn: #6236d4;
+	--clr-link-text: #2c0782;
+	--clr-body-text: #6e6e6f;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
+	font-weight: 100;
+	background-color: var(--clr-bg);
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+}
+
+.container {
+	height: 50vh;
+	width: min(70vw, 80vw);
+	padding: 0.5em;
+	margin: 25vh auto;
+
+	justify-content: center;
+	align-items: center;
+}
+
+.content {
+	background-color: var(--clr-bg-primary);
+	color: var(--clr-body-text);
+	width: 100%;
+	padding: 2em;
+	border-radius: 1em;
+	gap: 0.5em;
+}
+
+.title {
+	color: #FFF;
+	padding: 0.5em 0;
+}
+
+.text-content {
+	color: var(--clr-body-text);
+	padding: 0.5em 0;
+}
+
+.content label {
+	color: var(--clr-link-text);
+	display: inline-block;
+	white-space: nowrap;
+	font-weight: bold;
+}
+
+.content input {
+	vertical-align: middle;
+	margin-right: 10px;
+}
+
+.input-container {
+	width: 100%;
+}
+
+/* EXPENSES */
+.sendForm input {
+	background-color: var(--clr-bg-primary);
+	color: var(--clr-body-text);
+	border: 1px solid var(--clr-body-text);
+	width: 60%;
+	padding: 1em;
+	border-radius: 0.25em;
+}
+
+.sendForm .btn {
+	background-color: var(--clr-btn);
+	color: white;
+	width: min(50px, 35%);
+	padding: 1em;
+	border-radius: 0.25em;
+	text-align: center;
+}
+
+.sendForm .btn:hover {
+	background-color: white;
+	color: var(--clr-btn);
+}

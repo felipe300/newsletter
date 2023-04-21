@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Newsletter</title>
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<script defer src="./assets/js/script.js"></script>
+	</head>
+
+	<body>
+		<div class="container flex">
+			<div class="content flex">
+				<h2 class="title">Subscribete a nuestro newsletter</h2>
+				<p class="text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum neque
+					voluptatibus,
+					nesciunt molestiae ipsum veniam, sapiente tempore maiores ullam ad doloribus nam officiis, asperiores
+					exercitationem veritatis vitae dolore adipisci nemo.
+				</p>
+				<div>
+					<label>
+						<input type="checkbox" id="checkbox" value="yes">Términos y condiciones.
+					</label>
+				</div>
+				<form class="sendForm" id="sendForm">
+					<!-- ADD THIS TAG BEFORE THE ELEMENT YOU WANT TO CHANGE -->
+					<style>
+						input:-webkit-autofill,
+						input:-webkit-autofill:hover,
+						input:-webkit-autofill:focus,
+						input:-webkit-autofill:active {
+							transition: background-color 5000s;
+							-webkit-text-fill-color: #fff !important;
+						}
+					</style>
+					<input type="email" name="email" id="email" onclick="clearInput()" placeholder="Ingresa tu e-mail">
+					<button class="btn" type="submit" id="btn">OK</button>
+					<form />
+			</div>
+		</div>
+
+	</body>
+
+</html>
